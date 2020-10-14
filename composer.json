@@ -1,0 +1,29 @@
+{
+    "name": "lcloss/php-route",
+    "description": "Simple PHP package to manage routes",
+    "keywords": ["php","route","router"],
+    "homepage": "https://php-route.devcorner.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luciano Closs",
+            "email": "luciano@devcorner.io",
+            "homepage": "https://lucianocloss.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "LCloss\\View\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },    
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    }
+}

@@ -1,0 +1,9 @@
+language: php
+php:
+  - 7.3
+  - 7.4
+  - hhvm
+  
+matrix:
+  allow_failures:
+    - php: hhvm

@@ -15,7 +15,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "LCloss\\View\\": "src/"
+            "LCloss\\Route\\": "src/"
         }
     },
     "scripts": {

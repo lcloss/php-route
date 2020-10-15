@@ -1,19 +1,9 @@
 <?php
 namespace LCloss\Route;
-use LCloss\Debug\Debug;
 
 class Dispatcher {
-    private $_debug;
-    public function __construct()
-    {
-        $this->_debug = new Debug( Debug::DEBUG_NONE );
-    }
     public function dispatch( $callback, $params = [], $namespace = "App\\" ) 
     {
-        $this->_debug->printWhere();
-        $this->_debug->printInfo('params:');
-        $this->_debug->printInfo($params);
-
         if ( is_callable( $callback['callback'] )) {
             return call_user_func_array( $callback['callback'], array_values( $params ));
 

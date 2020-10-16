@@ -2,7 +2,7 @@
 namespace LCloss\Route;
 
 class Dispatcher {
-    public function dispatch( $callback, $params = [], $namespace = "App\\" ) 
+    public function dispatch( $callback, $params = [], $namespace = "App\\Controller\\" ) 
     {
         if ( is_callable( $callback['callback'] )) {
             return call_user_func_array( $callback['callback'], array_values( $params ));

@@ -42,7 +42,7 @@ class Router
         return $this->route_collection->where( $request_method, $pattern );
     }
 
-    public function dispatch( $route, $params, $namespace = "App\\" ) 
+    public function dispatch( $route, $params, $namespace = "App\\Controller\\" ) 
     {
         return $this->dispatcher->dispatch( $route->callback, $params, $namespace );
     }

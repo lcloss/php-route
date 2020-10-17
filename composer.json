@@ -1,5 +1,5 @@
 {
-    "name": "lcloss/php-route",
+    "name": "lcloss/route",
     "description": "Simple PHP package to manage routes",
     "keywords": ["php","route","router"],
     "homepage": "https://php-route.devcorner.io",

@@ -48,4 +48,8 @@ class Route
     {
         return self::getRouter()->base();
     }
+    public static function asset( $resource )
+    {
+        return self::getRouter()->asset( $resource );
+    }
 }

@@ -110,4 +110,9 @@ class Router
 
         return $protocol . '://' . $server;
     }
+
+    public function asset( $resource )
+    {
+        return $this->base() . $resource;
+    }
 }

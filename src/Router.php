@@ -88,8 +88,6 @@ class Router
             $server = $request->server();
             $uri = [];
 
-            // echo 'Base: ' . $request->base();
-
             foreach( array_filter(explode('/', $request->base())) as $key => $value ) {
                 if ( $value == 'public' ) {
                     $uri[] = $value;
@@ -99,9 +97,17 @@ class Router
             }
             $uri = implode('/', array_filter($uri)) . '/';
 
-            // return $protocol . '://'. $server . $uri . $this->route_collection->convert( $pattern, $params );
             return $protocol . '://'. $server . $this->route_collection->convert( $pattern, $params );
         }
         return false;
+    }
+
+    public function base()
+    {
+        $request = new Request();
+        $protocol = $request->protocol();
+        $server = $request->server();
+
+        return $protocol . '://' . $server;
     }
 }

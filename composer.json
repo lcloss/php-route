@@ -12,11 +12,14 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "LCloss\\Route\\": "src/"
-        }
+        },
+        "files": [
+            "helpers/router.php"
+        ]        
     },
     "scripts": {
         "test": "phpunit"

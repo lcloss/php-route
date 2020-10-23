@@ -22,13 +22,13 @@ function route( $name, $params = NULL )
 
 function redirect( $pattern, $params = NULL )
 {
-    return header('Location: ' . route($pattern, $params));
+    header('Location: ' . route($pattern, $params));
     exit();
 }
 
 function back()
 {
-    return header('Location: ' . $_SERVER['HTTP_REFERER']);
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
     exit();
 }
 

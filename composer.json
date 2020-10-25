@@ -12,7 +12,6 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "LCloss\\Route\\": "src/"
@@ -24,6 +23,7 @@
     "scripts": {
         "test": "phpunit"
     },    
+    "minimum-stability": "stable",
     "require": {
     },
     "require-dev": {
